@@ -1,5 +1,5 @@
 import { useState } from 'react'
-import { Home, Navbar } from './components'
+import { Home, Navbar, About } from './components'
 // import  { BrowserRouter } from 'react-router-dom';
 
 function App() {
@@ -8,6 +8,7 @@ function App() {
     <>
       <Navbar/>
       <Home/>
+      <About/>
     </>
   )
 }

@@ -23,10 +23,18 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
-.gradientblue{
+html, body {
+  overflow-x: hidden;
+}
+
+.text-gradientblue{
   background-image : linear-gradient(180deg, rgba(94,162,239,1) 0%, rgba(5,97,252,1) 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+}
+
+.gradientblue{
+  background: linear-gradient(180deg, rgba(94,162,239,1) 0%, rgba(5,97,252,1) 100%);
 }
 
 body{
