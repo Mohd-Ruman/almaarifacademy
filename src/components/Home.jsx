@@ -6,21 +6,23 @@ import { fadeIn } from '../utils/motion';
 const Home = () => {
   return (
     <>
-      <motion.div variants={fadeIn('right', 'spring', 0.5, 1)}
+      <motion.div variants={fadeIn('right', 'spring', 1, 1)}
       initial='hidden'
       whileInView='show'
       className='flex items-center justify-center'>
-        <Tilt>
-          <div className='mt-4 p-[24px] w-full h-full flex items-center justify-center
-          rounded-3xl bg-black flex-col'>
-            <h1 className='font-bold text-[40px] text-white'> HOME </h1>
-            <p className='text-white font-bold'>Developed by Mohd Ruman</p>
-            <p className='text-white mt-2'>Tailwind CSS : Test case - Style</p>
-            <p className='text-white'>Framer Motion : Test case - fade in animation</p>
-            <p className='text-white'>Tilt Parallax React : Test case - the home card tilts</p>
-          </div> 
-        </Tilt>
+        <div className='w-[310px] h-[310px]'>
+          <img src='./src/assets/Am-logo-dark.png'/>
+        </div>
+        
       </motion.div>
+      <div className='flex flex-col items-center gap-4'>
+          <h1 className='font-bold text-[40px] text-center -mt-10'>
+            Learn <span className='gradientblue'>arabic</span> with us online and see yourself develop</h1>
+          <p className='text-whitesecondary'>An interactive program, for Arabic learning</p>
+          <button>Get Started</button>
+          <button>Contact</button>
+      </div>
+        
     </>
   )
 }
