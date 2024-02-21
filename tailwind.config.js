@@ -13,6 +13,7 @@ export default {
         darksecondary:"var(--dark-secondary)",
         blueprimary:"var(--blue-primary)",
         bluesecondary:"var(--blue-secondary)",
+        bluelight:"var(--blue-light)",
       },
     },
   },

@@ -24,30 +24,30 @@ const Home = () => {
           <button className='gradientblue text-whiteprimary
            w-[350px] h-[45px] rounded-full flex flex-row items-center
             justify-center gap-2'>
-            <p>Get Started</p>
+            <p className='font-medium'>Get Started</p>
             <img src='./src/assets/icon-arrow-down.svg'
             className='w-[18px] h-[18px]'/>
           </button>
           <button className='bg-darkprimary text-whiteprimary
            w-[350px] h-[45px] rounded-full flex flex-row items-center
            justify-center gap-2'>
-            <p>Contact</p>
+            <p className='font-medium'>Contact</p>
             <img src='./src/assets/icon-contact.svg'
             className='w-[18px] h-[18px]'/>
           </button>
           <div className='w-[350px] h-full bg-whiteprimary
            border-[0.5px] border-whitesecondary/95 p-[34px] 
            rounded-[70px] flex justify-center items-center mt-8
-           shadow-xl'>
+           shadow-xl shadow-whitesecondary relative'>
             <p className='text-center italic text-[20px] leading-tight'>“Learn Arabic, for it strengthens 
               the intelligence and increases one's 
               noble conduct.”<br/>
               <span className='text-whitesecondary'>( Al-Bayhaqi )</span></p>
+              <div className='absolute w-[350px] -z-10 -bottom-24 -right-20'>
+                <img src='./src/assets/darood.png'/>
+              </div>
           </div>
 
-          <div className='absolute w-[350px] -z-10 -bottom-24 -right-20'>
-            <img src='./src/assets/darood.png'/>
-          </div>
 
       </div>
         
