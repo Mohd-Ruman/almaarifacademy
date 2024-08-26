@@ -3,6 +3,11 @@ import Tilt from 'react-parallax-tilt';
 import { motion } from 'framer-motion';
 import { fadeIn } from '../utils/motion';
 
+import AmLogoDark from '../assets/Am-logo-dark.png';
+import ArrowDown from '../assets/icon-arrow-down.svg';
+import ContactLogo from '../assets/icon-contact.svg';
+import DaroodLogo from '../assets/darood.png';
+
 import SectionWrapper from '../hoc';
 
 const Home = () => {
@@ -13,7 +18,7 @@ const Home = () => {
       whileInView='show'
       className='flex items-center justify-center'>
         <div className='w-[310px] h-[310px] -mt-12'>
-          <img src='./src/assets/Am-logo-dark.png'/>
+          <img src={AmLogoDark}/>
         </div>
         
       </motion.div>
@@ -25,14 +30,14 @@ const Home = () => {
            w-[350px] h-[45px] rounded-full flex flex-row items-center
             justify-center gap-2'>
             <p className='font-medium'>Get Started</p>
-            <img src='./src/assets/icon-arrow-down.svg'
+            <img src={ArrowDown}
             className='w-[18px] h-[18px]'/>
           </button>
           <button className='bg-darkprimary text-whiteprimary
            w-[350px] h-[45px] rounded-full flex flex-row items-center
            justify-center gap-2'>
             <p className='font-medium'>Contact</p>
-            <img src='./src/assets/icon-contact.svg'
+            <img src={ContactLogo}
             className='w-[18px] h-[18px]'/>
           </button>
           <div className='w-[350px] h-full bg-whiteprimary
@@ -44,7 +49,7 @@ const Home = () => {
               noble conduct.”<br/>
               <span className='text-whitesecondary'>( Al-Bayhaqi )</span></p>
               <div className='absolute w-[350px] -z-10 -bottom-24 -right-20'>
-                <img src='./src/assets/darood.png'/>
+                <img src={DaroodLogo}/>
               </div>
           </div>
 

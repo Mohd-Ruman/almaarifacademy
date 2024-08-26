@@ -2,6 +2,9 @@ import React from 'react'
 import SectionWrapper from '../hoc';
 import AboutCard from './AboutCard'; 
 
+import ArrowIcon from '../assets/icon-arrow-click.svg';
+import DaroodIcon from '../assets/icon-darood.svg';
+
 const About = () => {
   return (
     <div className='mt-20'>
@@ -9,25 +12,25 @@ const About = () => {
        leading-tight mb-10'>Take a step towards learning the language
         of <span className='text-gradientblue'>Qur'an</span> and our
         <span className='text-gradientblue'> Messenger </span>
-        <img src='./src/assets/icon-darood.svg' className='inline'/>
+        <img src={DaroodIcon} className='inline'/>
       </h1>
 
       <AboutCard 
-      logo={"./src/assets/icon-arrow-click.svg"}
+      logo={ArrowIcon}
       title={<>Learn Online</>} 
       description={<>Learn with us online from the comfort of your 
       homes and your suitable envionment with an easy to adapt 
       class system.</>}/>
 
       <AboutCard 
-      logo={"./src/assets/icon-arrow-click.svg"}
+      logo={ArrowIcon}
       title={<>Access Hadith literature</>} 
       description={<>Arabic is also the language of the Hadith,
       which are the sayings, actions, 
       and approvals of Prophet Muhammad (peace be upon him).</>}/>
 
       <AboutCard 
-      logo={"./src/assets/icon-arrow-click.svg"}
+      logo={ArrowIcon}
       title={<>Understand The Quran</>} 
       description={<>Arabic is the language of the Quran, the holy book of Islam. 
         Learning Arabic allows Muslims to read and understand the 
@@ -61,14 +64,14 @@ const About = () => {
         <div className='w-[350px] sm:w-full md:w-full lg:w-full h-full bg-whiteprimary
            border-[0.5px] border-whitesecondary/95 p-[34px] 
            rounded-[70px] flex justify-center items-center mt-8
-           shadow-xl shadow-whitesecondary relative flex-col'>
+           shadow-xl shadow-whitesecondary relative flex-col mb-10'>
             <h1 className='font-bold text-[40px] mt-6 mb-6 leading-10'>
             Contact <span className='text-gradientblue'>us</span></h1>
             <p className='text-center italic text-[20px] leading-tight'>Mohammad Maroof Nadwi<br/>
               <span className='text-whitesecondary'>(+91) 89829-67868</span></p>
-              <div className='absolute w-[350px] -z-10 -bottom-24 -right-20'>
+              {/* <div className='absolute w-[350px] -z-10 -bottom-24 -right-20'>
                 <img src='./src/assets/darood.png'/>
-              </div>
+              </div> */}
           </div>
 
 
